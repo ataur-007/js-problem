@@ -1,54 +1,24 @@
-
-var depth = 40;
-function animalClaculator(depth){
-var animal =0;
-if( depth <= 10){
-    animal = depth * 50;
-}
-else if(depth <= 20){
-    var firstPart = 10 * 50;
-    var reminging = depth - 10;
-    var secondPart = reminging * 100;
-    animal = firstPart + secondPart;
-}
-else if( depth <= 30){
-    var firstPart = 10 * 50;
-    var secondPart = 10 * 100;
-    var reminging = depth - 20;
-    var thirdPart = reminging + 200;
-    animal = firstPart + secondPart + thirdPart;
-}
-else{
-    var firstPart = 10 * 50;
-    var secondPart = 10 * 100;
-    var thirdPart = 10 * 200;
-    var reminging = depth - 30;
-    var forthPart = reminging * 300;
-    animal = thirdPart + secondPart + firstPart + forthPart;
-}
-return animal;
+var found = 45;
+function thisIsFoundFucntio(found){
+    var newOne = 0;
+    if(found <= 10){
+        newOne = 10 * 50;
+    }
+    else if(found <= 20){
+       var firstpart = 10 * 50;
+       var reminging = found -10;
+       var secondPart = reminging * 100;
+       secondPart = firstpart + secondPart;
+    }
+    else{
+        var firstPart = 10 * 20;
+        var secondPart = 20 * 100;
+        var reminging = found - 20;
+        var thirdPart = reminging * 200;
+        var thirdPart = firstPart + secondPart + thirdPart; 
+    }
+    return newOne;
 }
 
-var count = animalClaculator(22);
-console.log(count);
-
-//2nd time try
-
-// var depth = 30;
-// var animal = 0;
-// if( depth <= 10){
-//     animal = depth * 50;
-// }
-// else if( depth <= 20){
-//     var firstPart = 10 * 50;
-//     var reminging = depth - 10;
-//     var secondPart = reminging * 100;
-//     animal = firstPart + secondPart;
-// }
-// else{
-//     var firstPart = 10 * 50;
-//     var secondPart = 10 * 100;
-//     var reminging = depth - 20;
-//     var thirdPart = reminging + 300;
-//     animal = firstPart + secondPart + thirdPart;
-// }
+var round = thisIsFoundFucntio(10);
+console.log(round);
