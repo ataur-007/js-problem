@@ -4,10 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(203, 204, 204);
+        }
+        .text{
+            font-size: 60px;
+            text-align: center;
+        }
+        .loader{
+            height: 30px;
+            width: 30px;
+            margin: 0px auto;
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+            animation: anime 2s linear infinite;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        @keyframes anime{
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
 </head>
 <body>
-
-  
-
+    <div class="text">This is our CSS heading</div>
+    <div class="loader">
+        <a href="https://www.facebook.com/watch/?v=1786441378523615"></a>
+    </div>
 </body>
 </html>
